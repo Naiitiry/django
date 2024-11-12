@@ -7,5 +7,11 @@
 </head>
 <body>
     <h1>Hola {{name}}</h1>
+    <h3>Categorias</h3>
+    <ul>
+        {% for category in categories %}
+        <li>{{category}}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
