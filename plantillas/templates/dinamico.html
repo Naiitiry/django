@@ -10,8 +10,13 @@
     <h3>Categorias</h3>
     <ul>
         {% for category in categories %}
-        <li>{{category}}</li>
+            {% if category == 'code'%}
+                <li><b>{{category|upper}}</b></li>
+            {% else %}
+                <li>{{category}}</li>
+            {% endif %}
         {% endfor %}
+        <h5>Totla de categorias: {{categories|length}}</h5>
     </ul>
 </body>
 </html>
