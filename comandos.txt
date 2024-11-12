@@ -1,0 +1,13 @@
+Instalación - pip install django
+
+Crear proyecto - django-admin startproject 'XXXX'
+
+Patrón de arquitectura - MTV (Model Template View)
+
+Ejecutar comando migrate, al principio de la app y cada vez que modifiquemos el modelo de datos.
+python manage.py migrate (hay que colocarse en la ruta principal (en este caso el primer holamundo))
+
+Servidor de pruebas - python manage.py runserver
+
+Archivo de views.py para crear las vistas.
+
