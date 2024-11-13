@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: aquamarine;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    padding: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 35px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-width: 85vh;
+}
+
+footer{
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+}

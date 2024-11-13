@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% block styles %}
+    {% endblock %}
+    <title>{% block title%}{% endblock %}
+    </title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Herencia</a></li>
+            <li><a href="#">Otra</a></li>
+            <li><a href="#">Ejemplo</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}
+        
+        {% endblock %}
+    </main>
+    <footer>
+        <p>Ah re locoooo</p>
+    </footer>
+    {% block scripts %}{% endblock%}
+</body>
+</html>
