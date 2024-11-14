@@ -8,9 +8,19 @@ body{
     min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
     margin: 0;
+    background-color: darkolivegreen;
 }
 nav{
     background-color: #ccc;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: darkgoldenrod;
+        margin-left: 15px;
+    }
 }
 ul{
     display: flex;
@@ -24,6 +34,16 @@ ul li{
 ul li a{
     text-decoration: none;
     font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    color: #265301;
+}
+.muestra{
+    a{
+        color:blue;
+    }
+}
+.muestra a:hover{
+    color: #ccc;
 }
 main{
     display: flex;
@@ -31,6 +51,17 @@ main{
     justify-content: center;
     padding: 30px;
     flex-direction: column;
+    color: #ccc;
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3rem;
+    }
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    p{
+        font-style: italic;
+    }
 }
 footer{
     background-color: #ccc;
