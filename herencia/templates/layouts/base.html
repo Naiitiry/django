@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
     {% block styles %}
     {% endblock %}
-    <title>{% block title%}{% endblock %}
-    </title>
+    <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     <nav>
@@ -20,7 +19,7 @@
     </nav>
     <main>
         {% block content %}
-        
+
         {% endblock %}
     </main>
     <footer>
