@@ -10,13 +10,7 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Herencia</a></li>
-            <li><a href="#">Otra</a></li>
-            <li><a href="#">Ejemplo</a></li>
-        </ul>
-    </nav>
+    {% include 'layouts/partials/menu.html' %}
     <main>
         {% block content %}
 
