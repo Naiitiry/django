@@ -11,6 +11,8 @@ Servidor de pruebas - python manage.py runserver
 
 Archivo de views.py para crear las vistas.
 
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+
 Para crear una aplicación con modularización, es decir varias app en nuestra app,
 debemos ingresar el siguiente comando:
 
@@ -18,8 +20,14 @@ debemos ingresar el siguiente comando:
 
 Una vez tengamos models.py en comentarios, debemos ejecutar:
 
+- python manage.py check "nombre_de_app" (en este caso 'comentarios')
+
 - python manage.py makemigrations
 
 Y luego - python manage.py migrate
 
- # # # # # # Si tengo que agregar un nuevo campo, simplemente ejecuto makemigrations y liego migrate
+ # # # # # # Si tengo que agregar un nuevo campo, simplemente ejecuto makemigrations y luego migrate
+
+ -  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+
+ 

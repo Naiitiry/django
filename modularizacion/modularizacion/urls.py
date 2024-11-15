@@ -19,7 +19,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('comentarios/',include('comentarios.urls'))
+    path('comentarios/',include('comentarios.urls')),
     # Para que funcione debemos ingresar a la url que nos da con lo siguiente:
     # cometarios/test/ que utilizamos como ejemplo.
+    
 ]
