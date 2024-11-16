@@ -17,6 +17,18 @@ def queries(request):
     author = Author.objects.get(id=1)
 
     #Listado de todas las entradas.
-    #entrys = Entry.objects.all()
+    entrys = Entry.objects.all()
 
-    return render(request,'post/queries.html',{'authors':authors,'offsets':offsets})
+    #Listado de todas las entradas y ordernarlos.
+    orders = Author.objects.all().order_by('email')
+
+    #Listar todos los ID <= 15.
+    filtered2 = Author.objects.filter(id__lte=15)
+
+    #Listar autores que contienen en su nombre la palabra "yes"
+    filtered3 = Author.objects.filter(name__contains="yes")
+    #En esta bbdd no hay ninguno.
+
+    
+
+    return render(request,'post/queries.html',{'authors':authors,'offsets':offsets,'orders':orders,'filtered2':filtered2,'filtered3':filtered3})

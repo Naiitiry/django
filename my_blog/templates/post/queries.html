@@ -6,6 +6,27 @@
     <title>Document</title>
 </head>
 <body>
+    <h3>Elementos ordenados por email</h3>
+    <ul>
+        {% for order in orders %}
+        <li>{{ order.email }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Elementos con ID <= 15</h3>
+    <ul>
+        {%for elm in filtered2%}
+        <li>{{elm.name}}</li>
+        {%endfor%}
+    </ul>
+
+    <h3>Elementos con "yes" en su nombre</h3>
+    <ul>
+        {%for elm in filtered3%}
+        <li>{{elm.name}}</li>
+        {%endfor%}
+    </ul>
+
     <h3>Offsets</h3>
     <ul>
         {% for offset in offsets%}
