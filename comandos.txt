@@ -30,6 +30,7 @@ Y luego - python manage.py migrate
 
  -  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
 
+Clase 21 - OpenBootcamp
 
 Para poblar (hacer pruebas de BBDDD) se hace con SEED, utilizando el comando
 
