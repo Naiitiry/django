@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from .models import Author,Entry
 
 def queries(request):
@@ -29,6 +29,11 @@ def queries(request):
     filtered3 = Author.objects.filter(name__contains="yes")
     #En esta bbdd no hay ninguno.
 
-    
-
     return render(request,'post/queries.html',{'authors':authors,'offsets':offsets,'orders':orders,'filtered2':filtered2,'filtered3':filtered3})
+
+def update(request):
+    author = Author.objects.get(id=1)
+    author.name ="Juanjo"
+    author.email = "juanjo@gmail.com"
+    author.save()
+    return HttpResponse("Modificado correctamente.")
