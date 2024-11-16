@@ -30,4 +30,14 @@ Y luego - python manage.py migrate
 
  -  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
 
- 
+
+Para poblar (hacer pruebas de BBDDD) se hace con SEED, utilizando el comando
+
+pip install django-seed
+
+Ahora si queremos agregar datos a nuestra aplicación, se hace utilizando:
+
+python manage.py seed "nombre_de_app" --number XX(numero de entradas)
+
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+
