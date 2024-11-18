@@ -42,3 +42,13 @@ python manage.py seed "nombre_de_app" --number XX(numero de entradas)
 
 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
 
+Para agregar las relaciones muchos a muchos, debemos guardar los datos primero
+luego relacionarlos, porque sino no puede vincular las ID
+
+Dentro de la función se agrega ej.: el articulo."tabla-vinculante".add("publicación")
+
+Es decir, dentro de la clase se debe poner una variable que indique que son de * muchos a muchos *
+e indicar la clase con la que está relacionado. ej.:
+publications = models.ManyToManyField(Publication)
+
+en docs.djangoproject.com en topics/db/examples/ tienen sobre los 3 casos 1 a 1 - 1 a muchos - muchos a muchos.
