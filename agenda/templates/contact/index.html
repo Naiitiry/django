@@ -3,11 +3,14 @@
 
 {% block 'content' %}
 <ul class="list">
-    <li>Contacto 1</li>
-    <li>Contacto 1</li>
-    <li>Contacto 1</li>
-    <li>Contacto 1</li>
-    <li>Contacto 1</li>
-    <li>Contacto 1</li>
+    {% for contact in contacts %}
+        <li>{{contact.name}}
+            <span>
+                <a href="#">Ver</a>
+                <a href="#">Editar</a>
+                <a href="#">Borrar</a>
+            </span>
+        </li>
+    {% endfor %}
 </ul>
 {% endblock %}

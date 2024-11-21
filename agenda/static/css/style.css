@@ -68,4 +68,8 @@ main{
 .list li{
     padding: 15px;
     border-bottom: 1px solid var(--color-text);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
