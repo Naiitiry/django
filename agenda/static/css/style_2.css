@@ -153,12 +153,20 @@ main{
 }
 .card{
     width: 250px;
-    height: 500px;
+    height: 250px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     margin: 20px;
-    background-color: #a10e2e;
+    background-color: var(--color-primario);
+}
+.card{
+    color: white;
+    text-decoration: none;
+}
+.card:hover{
+    background-color: var(--color-text);
+    color: white;
 }
