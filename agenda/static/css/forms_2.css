@@ -1,0 +1,48 @@
+input {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--color-text);
+    padding: 5px;
+    width: 100%;
+}
+.btn-send{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-primario);
+    color: white;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-send:hover{
+    background-color: white;
+    color: var(--color--primario);
+    border: 1px solid var(--color-primario);
+}
+
+.aux-btns-form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.aux-btns-form a{
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px;
+    background-color: #a10e2e;
+}

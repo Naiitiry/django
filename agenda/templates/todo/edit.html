@@ -1,6 +1,6 @@
 {% extends 'layout/base.html' %}
 
-{% block 'title' %}Creación de Tarea{% endblock %}
+{% block 'title' %}Edición de Tarea{% endblock %}
 
 {% block 'style' %}
 {% load static %}
@@ -9,8 +9,16 @@
 
 {% block 'content' %}
 
+{% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li{% if message.tags %} class="alert-success"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
     <span class="aux-btns-form"><a href="{% url 'todo' %}">Volver atrás</a></span>
-    <form action="{% url 'todo_create' %}" method="POST">
+    <form action="{% url 'todo_edit' id=id %}" method="POST">
         {% csrf_token %}
         <table>
             {{ form.as_table }}
