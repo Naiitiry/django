@@ -20,9 +20,9 @@
     <span class="aux-btns-form"><a href="{% url 'todo' %}">Volver atrás</a></span>
     <form action="{% url 'todo_edit' id=id %}" method="POST">
         {% csrf_token %}
-        <table>
-            {{ form.as_table }}
-        </table>
+            <table>
+                {{ form.as_table }}
+            </table>
         <input type="submit" class="btn-send" value="Enviar">
     </form>
 {% endblock %}

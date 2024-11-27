@@ -1,12 +1,17 @@
-from django.shortcuts import render,HttpResponse, redirect
+from django.shortcuts import render,HttpResponse, redirect 
 from .models import Contact
 from .forms import ContactForm
 from django.contrib import messages
 
-def index(request):
-    contacts=Contact.objects.filter(name__contains=request.GET.get('search',''))
+def index(request,letter=None):
+    alphabet = ['A','B','C','D','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+    if letter != None:
+        contacts = Contact.objects.filter(name__istartswith=letter.lower())
+    else:
+        contacts=Contact.objects.filter(name__icontains=request.GET.get('search',''))
     context = {
-        'contacts':contacts
+        'contacts':contacts,
+        'alphabet':alphabet,
     }
     return render(request,'contact/index.html', context)
 

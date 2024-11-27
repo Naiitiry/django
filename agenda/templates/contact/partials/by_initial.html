@@ -1,0 +1,5 @@
+<div>
+    {% for letter in alphabet %}
+        <a href="{% url 'contact' letter=letter%}">{{ letter }}</a>
+    {% endfor %}
+</div>
